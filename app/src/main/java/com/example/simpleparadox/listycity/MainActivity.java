@@ -20,11 +20,15 @@ import java.util.Arrays;
 public class MainActivity extends AppCompatActivity {
 
     // Declare the variables so that you will be able to reference it later.
-    ListView cityList;
-    EditText newName;
-    LinearLayout nameField;
-    ArrayAdapter<String> cityAdapter;
-    ArrayList<String> dataList;
+    private ListView cityList;
+    private EditText newName;
+    private LinearLayout nameField;
+    private ArrayAdapter<String> cityAdapter;
+    private ArrayList<String> dataList;
+
+    public ListView getCityList(){
+        return cityList;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
