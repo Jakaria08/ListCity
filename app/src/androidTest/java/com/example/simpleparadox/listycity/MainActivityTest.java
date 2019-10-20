@@ -68,8 +68,7 @@ public class MainActivityTest{
         assertTrue(solo.waitForText("Edmonton", 1, 2000));
 
         solo.clickOnButton("ClEAR ALL"); //Select ClEAR ALL
-        //True if there is not text: Edmonton on the   screen
-
+        //True if there is no text: Edmonton on the screen
         assertFalse(solo.searchText("Edmonton"));
 
     }
