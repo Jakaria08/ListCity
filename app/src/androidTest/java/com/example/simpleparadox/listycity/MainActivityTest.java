@@ -53,7 +53,7 @@ public class MainActivityTest{
      */
     @Test
     public void checkList(){
-        // Asserts that we are current activity is the MainActivity otherwise, show “Wrong Activity”
+        // Asserts that the current activity is the MainActivity. Otherwise, show “Wrong Activity”
         solo.assertCurrentActivity("Wrong Activity", MainActivity.class);
 
         solo.clickOnButton("ADD CITY"); //Click ADD CITY Button
