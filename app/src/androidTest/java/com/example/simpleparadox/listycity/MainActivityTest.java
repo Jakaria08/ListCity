@@ -39,7 +39,7 @@ public class MainActivityTest{
         Activity activity = rule.getActivity();
     }
     @Test
-    public void checkEmptyList(){
+    public void checkList(){
         solo.assertCurrentActivity("Wrong Activity", MainActivity.class);
 
         solo.clickOnButton("ADD CITY");
@@ -57,7 +57,7 @@ public class MainActivityTest{
         assertFalse(solo.searchText("Edmonton"));
     }
     @Test
-    public void clickCiyList(){
+    public void checkCiyListItem(){
         MainActivity activity = (MainActivity) solo.getCurrentActivity();
 
         solo.assertCurrentActivity("Wrong Activity", MainActivity.class);
