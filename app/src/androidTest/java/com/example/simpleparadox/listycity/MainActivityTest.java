@@ -63,7 +63,8 @@ public class MainActivityTest{
         solo.clickOnButton("CONFIRM"); //Select CONFIRM Button
         solo.clearEditText((EditText) solo.getView(R.id.editText_name)); //Clear the EditText
 
-        /* True if there is any text: Edmonton on the screen, wait at least 2 seconds and find     minimum one match. */
+        /* True if there is any text: Edmonton on the screen, wait at least 2 seconds and
+        find minimum one match. */
         assertTrue(solo.waitForText("Edmonton", 1, 2000));
 
         solo.clickOnButton("ClEAR ALL"); //Select ClEAR ALL
