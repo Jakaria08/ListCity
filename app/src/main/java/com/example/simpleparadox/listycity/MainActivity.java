@@ -2,6 +2,7 @@ package com.example.simpleparadox.listycity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.SparseBooleanArray;
@@ -71,7 +72,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // when clicking any of the city name from list view, redirect to showActivity Page
+        cityList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+            {
+                String cityName = cityList.getItemAtPosition(position).toString(); // finding cities from position
+
+                // getApplicationContext will fetch the current activity
+                Intent intent = new Intent(view.getContext(), showActivity.class);
+
+                // "cityName" = key to fetch data from intent in showActivity
+                intent.putExtra("cityName", cityName);
+
+                startActivity(intent);
+            }
+        });
+
     }
-
-
 }
