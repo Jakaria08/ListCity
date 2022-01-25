@@ -92,6 +92,15 @@ public class MainActivityTest{
     }
 
     /**
+     * switching between activities
+     */
+    @Test
+    public void switchactivities(){
+        solo.clickOnButton("Show Activity");
+        solo.clickOnButton("Main Activity");
+    }
+
+    /**
      * Close activity after each test
      * @throws Exception
      */
