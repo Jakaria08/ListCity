@@ -2,6 +2,7 @@ package com.example.simpleparadox.listycity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.SparseBooleanArray;
@@ -68,6 +69,14 @@ public class MainActivity extends AppCompatActivity {
         deleteButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 cityAdapter.clear();
+            }
+        });
+
+        final Button showact = findViewById(R.id.gotoshowactivity);
+        showact.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ShowActivity.class);
+                startActivity(intent);
             }
         });
 
