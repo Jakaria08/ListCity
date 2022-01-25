@@ -14,15 +14,21 @@
 
         <Button
             android:id="@+id/button_add"
-            android:layout_width="180dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="ADD CITY" />
 
         <Button
             android:id="@+id/button_clear"
-            android:layout_width="180dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="ClEAR ALL" />
+
+        <Button
+            android:id="@+id/button_goto_showActivity"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="NEW ACTIVITY" />
     </LinearLayout>
 
     <ListView
